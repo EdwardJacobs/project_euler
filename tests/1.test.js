@@ -4,4 +4,4 @@ test('sumMultiples function exists', () => {
   expect(sumMultiples).toBeDefined();
 });
 
-// next test
+// tests
