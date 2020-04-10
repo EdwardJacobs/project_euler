@@ -7,5 +7,6 @@ function sumMultiples(number) {
   }
   return sum;
 };
+console.log(sumMultiples(100));
 
 module.exports = sumMultiples;
