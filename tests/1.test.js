@@ -7,3 +7,5 @@ test('sumMultiples function exists', () => {
 test('sumMultiples 100', () => {
   expect(sumMultiples(100)).toEqual(2318);
 })
+
+
