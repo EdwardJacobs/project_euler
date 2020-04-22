@@ -1,13 +1,22 @@
-// find all primes less than number
+// make array of factors
+// filter prime numbers
 // return highest prime less than number
-function largestPrime(number) {
-  arr = [];
+function largestPrimeFactor(number) {
+  let arr = [];
 
-  for (let i=2; i<number; i++) {
-    if (number%i != 0 && number != i) {
-      arr.push(arr[i]);
+  for (let i=0; i<number; i++) {
+    if (number%i === 0) {
+      arr.push(i);
     }
   }
+
+  arr = arr.filter((num) => {
+    for (let i=2; i<=Math.sqrt(num); i++) {
+      if (num%i === 0) return false;
+    }
+    return true;
+  })
+  return arr.slice(-1)[0];
 }
 
-module.exports = largestPrime;
+module.exports = largestPrimeFactor;
