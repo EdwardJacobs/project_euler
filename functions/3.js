@@ -19,6 +19,4 @@ function largestPrimeFactor(number) {
   return arr.slice(-1)[0];
 }
 
-console.log(largestPrimeFactor(100));
-
 module.exports = largestPrimeFactor;
